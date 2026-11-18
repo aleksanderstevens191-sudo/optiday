@@ -1,0 +1,36 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+.pytest_cache/
+
+# Local environments and tooling
+.env
+.env.*
+*.venv/
+venv/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.DS_Store
+.idea/
+.vscode/
+
+# Personal data: never commit tracked activity, keys or captures
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+*.key
+*.pem
+logs/
+*.log
+screenshots/
+captures/
+data/
+config.local.toml

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "optiday"
+version = "0.4.1"
+description = "Private, on-device daily activity tracker and workflow coach for macOS."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+dependencies = [
+  "cryptography>=42",
+  "pyobjc-core>=10; sys_platform == 'darwin'",
+  "pyobjc-framework-Cocoa>=10; sys_platform == 'darwin'",
+  "pyobjc-framework-Quartz>=10; sys_platform == 'darwin'",
+  "pyobjc-framework-Vision>=10; sys_platform == 'darwin'",
+  "pyobjc-framework-ApplicationServices>=10; sys_platform == 'darwin'",
+  "rumps>=0.4; sys_platform == 'darwin'",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+optiday = "optiday.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["optiday*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.setuptools.package-data]
+optiday = ["static/*"]

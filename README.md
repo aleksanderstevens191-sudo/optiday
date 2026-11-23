@@ -308,6 +308,13 @@ each person keeps their data on their Mac and chooses to share only totals, neve
 
 ## License
 
-OptiDay is **source available**, not open source. You can read the code and run it on your own
-Mac for personal use. Commercial use, redistribution and selling it or a copy of it need written
-permission. See [LICENSE](LICENSE).
+OptiDay is **open source** under the [GNU Affero General Public License v3.0](LICENSE) (AGPL-3.0).
+
+In plain terms: you can use, study, change and share OptiDay for free, including at work. If you
+distribute a modified version, or run one as a service that other people use over a network, you
+must publish your changes under the same license.
+
+Want to build OptiDay into a closed-source or commercial product without those terms? A
+commercial license is available from the maintainer; open an issue to ask.
+
+Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
